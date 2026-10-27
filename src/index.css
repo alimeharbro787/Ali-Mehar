@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+
+  --color-brand-emerald: #0F5132;
+  --color-brand-forest: #064E3B;
+  --color-brand-dark: #003527;
+  --color-brand-teal: #134e4a;
+  --color-brand-pink: #FDF2F4;
+  --color-brand-blush: #FCE7F3;
+  --color-brand-accent-pink: #BE185D;
+  --color-brand-accent-pink-bright: #EC4899;
+  --color-brand-rose-border: #FBCFE8;
+  --color-brand-cream: #FAF8F5;
+  --color-brand-soft-mint: #E6F4EA;
+  --color-brand-mint-dark: #059669;
+  --color-brand-gold: #D97706;
+}
+
+@layer utilities {
+  .font-serif-title {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+  .font-sans-body {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+  .hero-soft-gradient {
+    background: linear-gradient(135deg, #FAF8F5 0%, #FFF5F7 50%, #F0FDF4 100%);
+  }
+  .handwriting-note {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-style: italic;
+  }
+  .card-hover-shadow {
+    transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .card-hover-shadow:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 28px -6px rgba(15, 81, 50, 0.12), 0 8px 12px -4px rgba(236, 72, 153, 0.08);
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(6, 78, 59, 0.2);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(6, 78, 59, 0.4);
+}

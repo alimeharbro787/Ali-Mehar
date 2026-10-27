@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "secondary-container": "#fd4e8a",
+          "on-secondary-fixed-variant": "#8f0042",
+          "inverse-surface": "#2f3130",
+          "on-error-container": "#93000a",
+          "primary-container": "#064e3b",
+          "secondary": "#b81059",
+          "surface-container-low": "#f4f4f2",
+          "surface-container-high": "#e8e8e6",
+          "on-tertiary-fixed-variant": "#6e3900",
+          "tertiary-container": "#6a3700",
+          "secondary-fixed": "#ffd9e0",
+          "on-surface-variant": "#404944",
+          "inverse-primary": "#95d3ba",
+          "on-secondary": "#ffffff",
+          "surface-container-lowest": "#ffffff",
+          "surface": "#f9f9f7",
+          "surface-variant": "#e2e3e1",
+          "on-primary-fixed-variant": "#0b513d",
+          "on-primary-container": "#80bea6",
+          "surface-container": "#eeeeec",
+          "secondary-fixed-dim": "#ffb1c3",
+          "background": "#f9f9f7",
+          "on-tertiary-fixed": "#2f1500",
+          "on-secondary-container": "#590027",
+          "on-background": "#1a1c1b",
+          "outline": "#707974",
+          "inverse-on-surface": "#f1f1ef",
+          "primary": "#003527",
+          "surface-tint": "#2b6954",
+          "on-tertiary-container": "#ff9939",
+          "on-primary-fixed": "#002117",
+          "surface-dim": "#dadad8",
+          "primary-fixed-dim": "#95d3ba",
+          "surface-container-highest": "#e2e3e1",
+          "on-surface": "#1a1c1b",
+          "tertiary": "#4a2400",
+          "tertiary-fixed": "#ffdcc3",
+          "surface-bright": "#f9f9f7",
+          "tertiary-fixed-dim": "#ffb77d",
+          "on-secondary-fixed": "#3f0019",
+          "error": "#ba1a1a",
+          "primary-fixed": "#b0f0d6",
+          "error-container": "#ffdad6",
+          "on-primary": "#ffffff",
+          "outline-variant": "#bfc9c3",
+          "on-tertiary": "#ffffff",
+          "on-error": "#ffffff"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "space-md": "1rem",
+          "gutter-sm": "1rem",
+          "space-lg": "1.5rem",
+          "space-xl": "2.5rem",
+          "margin": "2rem",
+          "space-sm": "0.5rem",
+          "space-xs": "0.25rem",
+          "gutter": "1.5rem",
+          "margin-mobile": "1rem"
+        },
+        "fontFamily": {
+          "headline-lg-mobile": [
+            "Playfair Display"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "title-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Playfair Display"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Playfair Display"
+          ],
+          "display": [
+            "Playfair Display"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "title-md": [
+            "Plus Jakarta Sans"
+          ],
+          "title-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Playfair Display"
+          ]
+        },
+        "fontSize": {
+          "headline-lg-mobile": [
+            "26px",
+            {
+              "lineHeight": "34px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "12px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "400"
+            }
+          ],
+          "title-sm": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "12px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "500"
+            }
+          ],
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "display": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "600"
+            }
+          ],
+          "title-lg": [
+            "18px",
+            {
+              "lineHeight": "26px",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ]
+        }
+      }
+    }
+  }</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_2px_12px_rgba(0,53,39,0.06)]"><div class="h-36 w-full flex flex-col justify-between"><div class="h-20 w-full px-margin flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-primary-fixed shadow-[0_2px_8px_rgba(0,53,39,0.12)]"><span class="material-symbols-outlined text-[24px]">shield_with_heart</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm tracking-tight text-primary font-bold">AMAN</span><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Baby Care &amp; Domestic Ops</span></div></div><div class="hidden xl:flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-low text-on-surface"><span class="w-2 h-2 rounded-full bg-surface-tint animate-pulse"></span><span class="font-label-sm text-label-sm font-semibold text-primary">Live Hub: Riyadh</span><span class="font-body-sm text-body-sm text-on-surface-variant">(Al-Nakheel &amp; Al-Malqa)</span></div></div><div class="flex-1 max-w-lg hidden md:block"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-space-md text-outline text-[20px]">search</span><input class="w-full pl-10 pr-space-md py-space-xs rounded-xl bg-surface-container-lowest text-on-surface placeholder:text-outline text-body-sm font-body-sm shadow-[0_1px_4px_rgba(0,0,0,0.03)] focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Search bookings, client files, caregiver nurses, protocols..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="flex items-center bg-surface-container-low rounded-lg p-space-xs"><button class="px-space-sm py-space-xs rounded-md bg-surface-container-lowest text-primary font-label-sm text-label-sm shadow-[0_1px_2px_rgba(0,0,0,0.04)]" type="button">EN</button><button class="px-space-sm py-space-xs rounded-md text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-colors" type="button">العربية</button></div><button aria-label="Notifications" class="relative p-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 w-2.5 h-2.5 rounded-full bg-secondary"></span></button><a class="hidden lg:flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">arrow_outward</span><span>Public Site</span></a><div class="flex items-center gap-space-sm pl-space-sm"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden sm:flex flex-col text-left"><span class="font-title-sm text-title-sm leading-tight text-on-surface">Fatima Al-Otaibi</span><span class="font-label-sm text-label-sm text-outline">Operations Lead</span></div><span class="material-symbols-outlined text-outline text-[18px] hidden sm:block">expand_more</span></div></div></div><div class="h-16 w-full px-margin flex items-center justify-between gap-gutter"><nav class="flex items-center gap-space-xs overflow-x-auto" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a aria-current="page" class="px-space-md py-space-xs transition-colors whitespace-nowrap bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="overview" href="#">Overview</a><a class="flex items-center gap-space-xs px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="bookings-and-scheduling" href="#"><span>Bookings &amp; Scheduling</span><span class="px-space-xs py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">14 Active</span></a><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="services-catalog" href="#">Services Catalog</a><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="packages-and-pricing" href="#">Packages &amp; Pricing</a><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="seasonal-events" href="#">Seasonal Events</a><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="caregiver-staff" href="#">Caregiver Staff</a><a class="px-space-md py-space-xs font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap" data-path="location-and-qr-settings" href="#">Location &amp; QR Settings</a></nav><div class="hidden md:flex items-center gap-space-md"><div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm"><span class="w-2 h-2 rounded-full bg-primary-fixed-dim"></span><span>Operational • Riyadh 24/7 On-Call Support</span></div><button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-sm text-label-sm transition-colors shadow-[0_2px_6px_rgba(0,53,39,0.18)]" type="button"><span class="material-symbols-outlined text-[16px]">add</span><span>Quick Booking</span></button></div></div></div></header><main class="w-full pt-36 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Interactive Operations Sub-Bar / Alert Ticker -->
+<div class="px-margin py-space-sm bg-surface-container-low flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-secondary-fixed text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[16px]">priority_high</span>
+</span>
+<div class="flex items-center gap-space-xs text-body-sm">
+<span class="font-title-sm text-primary">Riyadh Hub Dispatch:</span>
+<span class="text-on-surface-variant truncate">2 urgent neonatal night shift assignments pending for Al-Malqa &amp; Hittin villas</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-outline uppercase tracking-wider">Direct WhatsApp Line:</span>
+<a class="flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm shadow-sm hover:opacity-95 transition-opacity" href="https://wa.me/966501234567" target="_blank">
+<span class="material-symbols-outlined text-[15px]">chat</span>
+<span>+966 50 123 4567</span>
+</a>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-on-surface-variant">Sync: <span class="text-primary font-semibold">Active (Just Now)</span></span>
+</div>
+</div>
+<div class="px-margin py-space-lg flex flex-col gap-space-xl">
+<!-- Header Hero Banner with Riyadh Coverage -->
+<div class="relative overflow-hidden rounded-xl bg-primary text-on-primary p-space-lg shadow-xl">
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-surface-tint/20 blur-3xl pointer-events-none"></div>
+<div class="absolute right-40 -bottom-20 w-72 h-72 rounded-full bg-secondary/15 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="flex items-center gap-space-sm">
+<span class="px-space-sm py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold tracking-wide uppercase">
+              Riyadh Care Console
+            </span>
+<span class="flex items-center gap-1 font-body-sm text-primary-fixed-dim">
+<span class="w-2 h-2 rounded-full bg-primary-fixed animate-ping"></span>
+              Live Operations Online
+            </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-surface-container-lowest font-medium tracking-tight">
+            Maternal &amp; Infant Operations Center
+          </h1>
+<p class="font-body-md text-primary-fixed-dim">
+            Coordinating pediatric nurse dispatch, postpartum sleep support, and certified residential attendants across <span class="text-surface-container-lowest font-semibold">Al-Nakheel, Al-Malqa, Diplomatic Quarter, Hittin, &amp; Al-Sahafa</span>.
+          </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-container-low font-title-sm text-title-sm transition-all shadow-md" onclick="document.getElementById('quick-booking-modal').classList.remove('hidden')" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>+ New Manual Booking</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-primary-container text-on-primary hover:bg-surface-tint font-label-md text-label-md transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">ios_share</span>
+<span>Export CSV</span>
+</button>
+<button class="flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-primary-container text-on-primary hover:bg-surface-tint font-label-md text-label-md transition-colors shadow-sm" id="sync-public-btn" onclick="triggerWebSync()" type="button">
+<span class="material-symbols-outlined text-[18px]" id="sync-icon">sync</span>
+<span id="sync-text">Sync to Public Web</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 4 High-Impact KPI Stat Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Card 1 -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-outline uppercase tracking-wider">Active Bookings</span>
+<span class="font-headline-md text-headline-md text-primary mt-1 font-semibold">28 Families</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-primary-fixed/50 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">family_restroom</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low/50 rounded-lg p-space-xs flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant"><strong class="text-primary">18</strong> Night Shifts</span>
+<span class="text-outline-variant">•</span>
+<span class="text-on-surface-variant"><strong class="text-primary">10</strong> Day Care</span>
+<span class="px-space-xs py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">+14%</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-outline uppercase tracking-wider">Pending WhatsApp</span>
+<span class="font-headline-md text-headline-md text-secondary mt-1 font-semibold">5 Inquiries</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">mark_chat_unread</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-secondary-fixed/30 rounded-lg p-space-xs flex items-center justify-between text-body-sm">
+<span class="text-on-secondary-container font-medium flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+            2 urgent nurse dispatch (&lt;20m)
+          </span>
+<a class="text-secondary font-label-sm hover:underline" href="https://wa.me/966501234567" target="_blank">Open Web</a>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-outline uppercase tracking-wider">Caregiver Roster</span>
+<span class="font-headline-md text-headline-md text-on-surface mt-1 font-semibold">38 / 42 Nurses</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">medical_services</span>
+</div>
+</div>
+<div class="mt-space-md flex flex-col gap-1">
+<div class="flex items-center justify-between text-label-sm text-on-surface-variant font-label-sm">
+<span>Riyadh Deployment</span>
+<span class="font-semibold text-primary">91% Capacity</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 91%"></div>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-outline uppercase tracking-wider">Monthly Care Volume</span>
+<span class="font-headline-md text-headline-md text-primary mt-1 font-semibold">194,500 SAR</span>
+</div>
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[22px]">payments</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-low/50 rounded-lg p-space-xs flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant">Avg Ticket: <strong class="text-primary">6,850 SAR</strong></span>
+<span class="text-on-surface-variant flex items-center gap-1 font-label-sm text-label-sm text-primary">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +19.4% MoM
+          </span>
+</div>
+</div>
+</div>
+<!-- Modular View Switcher / Tab Pill Navigation -->
+<div class="flex flex-wrap items-center justify-between gap-space-md bg-surface-container-low p-space-xs rounded-xl">
+<div class="flex items-center gap-space-xs overflow-x-auto">
+<button class="admin-tab-btn active px-space-md py-space-xs rounded-lg bg-surface-container-lowest text-primary font-title-sm text-title-sm shadow-sm transition-all flex items-center gap-space-xs" onclick="switchAdminTab('bookings-section', this)" type="button">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span>Bookings &amp; Live Scheduling</span>
+<span class="px-space-xs py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">14 Active</span>
+</button>
+<button class="admin-tab-btn px-space-md py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface font-title-sm text-title-sm transition-all flex items-center gap-space-xs" onclick="switchAdminTab('services-cms-section', this)" type="button">
+<span class="material-symbols-outlined text-[18px]">grid_view</span>
+<span>Services CMS Catalog</span>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">13 Services</span>
+</button>
+<button class="admin-tab-btn px-space-md py-space-xs rounded-lg text-on-surface-variant hover:text-on-surface font-title-sm text-title-sm transition-all flex items-center gap-space-xs" onclick="switchAdminTab('pricing-packages-section', this)" type="button">
+<span class="material-symbols-outlined text-[18px]">loyalty</span>
+<span>Care Packages &amp; Pricing</span>
+<span class="px-space-xs py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">3 Public Tiers</span>
+</button>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm text-on-surface-variant pr-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary">pin_drop</span>
+<span>Auto-routing algorithm: <strong>Riyadh North Sector</strong></span>
+</div>
+</div>
+<!-- SECTION 1: BOOKINGS & SCHEDULING MANAGEMENT HUB -->
+<section class="flex flex-col gap-space-lg" id="bookings-section">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="flex flex-1 flex-wrap items-center gap-space-sm">
+<div class="relative flex-1 min-w-[240px]">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-[18px]">search</span>
+<input class="w-full pl-9 pr-space-md py-1.5 rounded-lg bg-surface-container-low text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary" id="booking-search" placeholder="Filter by family name, ref #BK-, or mobile..." type="text"/>
+</div>
+<!-- District Filter -->
+<div class="relative">
+<select class="px-space-md py-1.5 rounded-lg bg-surface-container-low text-body-sm font-medium text-on-surface appearance-none pr-8 focus:outline-none focus:ring-2 focus:ring-primary">
+<option value="">All Riyadh Districts</option>
+<option value="Diplomatic Quarter">Diplomatic Quarter (DQ)</option>
+<option value="Al-Nakheel">Al-Nakheel</option>
+<option value="Al-Malqa">Al-Malqa</option>
+<option value="Hittin">Hittin</option>
+<option value="Al-Sahafa">Al-Sahafa</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2 text-outline text-[18px] pointer-events-none">expand_more</span>
+</div>
+<!-- Service Filter -->
+<div class="relative">
+<select class="px-space-md py-1.5 rounded-lg bg-surface-container-low text-body-sm font-medium text-on-surface appearance-none pr-8 focus:outline-none focus:ring-2 focus:ring-primary">
+<option value="">All Care Categories</option>
+<option value="Newborn Care">Newborn Specialist Care</option>
+<option value="Postpartum">Postpartum Overnight Shift</option>
+<option value="Lactation">Feeding &amp; Lactation Support</option>
+<option value="Hygiene">Infant Hygiene &amp; Bathing</option>
+<option value="Domestic">Residential Support &amp; Nursery Prep</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2 text-outline text-[18px] pointer-events-none">expand_more</span>
+</div>
+<!-- Status Filter -->
+<div class="relative">
+<select class="px-space-md py-1.5 rounded-lg bg-surface-container-low text-body-sm font-medium text-on-surface appearance-none pr-8 focus:outline-none focus:ring-2 focus:ring-primary">
+<option value="">Status: All Active</option>
+<option value="in_progress">In Progress (Shift Active)</option>
+<option value="pending">Pending Assignment</option>
+<option value="confirmed">Confirmed</option>
+<option value="completed">Completed History</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-2 text-outline text-[18px] pointer-events-none">expand_more</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="flex items-center gap-1 px-space-md py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary font-label-md text-label-md transition-colors" onclick="alert('Roster PDF exported for shift supervisors.')" type="button">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span>Print Nurse Log</span>
+</button>
+<button class="flex items-center gap-1 px-space-md py-1.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md transition-colors shadow-sm" onclick="sendBroadcastSms()" type="button">
+<span class="material-symbols-outlined text-[16px]">sms</span>
+<span>WhatsApp Broadcast</span>
+</button>
+</div>
+</div>
+<!-- Main Bookings Data Table -->
+<div class="w-full overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead class="bg-surface-container-low text-label-sm font-label-sm text-outline uppercase tracking-wider">
+<tr>
+<th class="py-space-sm px-space-md">Booking Ref &amp; Family</th>
+<th class="py-space-sm px-space-md">Care Service &amp; Schedule</th>
+<th class="py-space-sm px-space-md">Riyadh District</th>
+<th class="py-space-sm px-space-md">Assigned Care Nurse</th>
+<th class="py-space-sm px-space-md">Status</th>
+<th class="py-space-sm px-space-md text-right">Operational Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-body-sm text-on-surface">
+<!-- Row 1: High VIP DQ Family -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold text-label-md">
+                      HR
+                    </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-title-sm text-primary font-semibold">Princess Noura / Al-Saud</span>
+<span class="px-space-xs py-0.2 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[10px] font-bold uppercase tracking-wider">VIP Royal</span>
+</div>
+<span class="font-label-sm text-outline">Ref: #BK-9482 • +966 50 882 ****</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-title-sm text-on-surface">Comprehensive Postpartum Care</span>
+<span class="font-label-sm text-primary-fixed-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">nightlight</span>
+                      12h Night Shift (19:00 - 07:00) • Nov 1 – Nov 30
+                    </span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1 font-body-sm">
+<span class="material-symbols-outlined text-outline text-[16px]">location_on</span>
+<span>Diplomatic Quarter</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center text-label-sm font-semibold">
+                      SM
+                    </div>
+<div class="flex flex-col">
+<span class="font-title-sm text-on-surface leading-tight">Sarah Mansour, RN</span>
+<span class="font-label-sm text-outline">Neonatal ICU Certified</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                    In Progress • Active Night
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<a class="p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary" href="https://wa.me/966501234567" target="_blank" title="Open WhatsApp Dispatch">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</a>
+<button class="p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-primary" onclick="openDetailDrawer('Princess Noura / Al-Saud', '#BK-9482', 'Sarah Mansour, RN', 'Diplomatic Quarter', 'Comprehensive Postpartum (12h Night)')" title="View Care Detail &amp; Vitals" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-primary" onclick="alert('Editing shift schedule for #BK-9482')" title="Edit Shift" type="button">
+<span class="material-symbols-outlined text-[18px]">edit_calendar</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Al-Nakheel Regular Care -->
+<tr class="bg-surface-container-low/20 hover:bg-surface-container-low/40 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-primary flex items-center justify-center font-bold text-label-md">
+                      MH
+                    </div>
+<div class="flex flex-col">
+<span class="font-title-sm text-on-surface font-semibold">Mona Al-Harbi</span>
+<span class="font-label-sm text-outline">Ref: #BK-9485 • +966 55 412 ****</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-title-sm text-on-surface">Essential Newborn Start</span>
+<span class="font-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">sunny</span>
+                      6h Day Shift (08:00 - 14:00) • Nov 5 – Nov 19
+                    </span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1 font-body-sm">
+<span class="material-symbols-outlined text-outline text-[16px]">location_on</span>
+<span>Al-Nakheel</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded-full bg-surface-tint text-on-primary flex items-center justify-center text-label-sm font-semibold">
+                      ZK
+                    </div>
+<div class="flex flex-col">
+<span class="font-title-sm text-on-surface leading-tight">Zeinab Al-Khalidi</span>
+<span class="font-label-sm text-outline">Midwife &amp; Infant Specialist</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-tint"></span>
+                    Confirmed • Scheduled
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<a class="p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary" href="https://wa.me/966501234567" target="_blank" title="Open WhatsApp">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</a>
+<button class="p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-primary" onclick="openDetailDrawer('Mona Al-Harbi', '#BK-9485', 'Zeinab Al-Khalidi', 'Al-Nakheel', 'Essential Newborn Start (6h Day)')" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-primary" type="button">
+<span class="material-symbols-outlined text-[18px]">clinical_notes</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Urgent Pending Assignment -->
+<tr class="bg-secondary-fixed/20 hover:bg-secondary-fixed/30 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-label-md">
+                      TG
+                    </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<span class="font-title-sm text-secondary font-semibold">Dr. Tariq &amp; Lulwa Al-Ghamdi</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">emergency</span>
+</div>
+<span class="font-label-sm text-outline">Ref: #BK-9488 • +966 54 991 ****</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-title-sm text-secondary font-semibold">Feeding &amp; Lactation Crisis Support</span>
+<span class="font-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+                      Immediate Response Requested • Today 16:00
+                    </span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1 font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[16px]">location_on</span>
+<span>Al-Malqa (Near KAFD)</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs">
+<button class="flex items-center gap-1 px-space-sm py-1 rounded-md bg-secondary text-on-secondary font-label-sm text-label-sm shadow hover:bg-secondary/90 transition-all" onclick="quickAssignNurse('#BK-9488')" type="button">
+<span class="material-symbols-outlined text-[14px]">person_add</span>
+<span>Assign Caregiver Now</span>
+</button>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+                    Urgent Dispatch Needed
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<a class="px-space-sm py-1 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center gap-1 shadow-sm" href="https://wa.me/966501234567" target="_blank">
+<span class="material-symbols-outlined text-[14px]">call</span>
+<span>Call Client</span>
+</a>
+</div>
+</td>
+</tr>
+<!-- Row 4: Twins Newborn Night Hittin -->
+<tr class="hover:bg-surface-container-low/40 transition-colors">
+<td class="py-space-md px-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-primary flex items-center justify-center font-bold text-label-md">
+                      FB
+                    </div>
+<div class="flex flex-col">
+<span class="font-title-sm text-on-surface font-semibold">Faisal Bin Rashid</span>
+<span class="font-label-sm text-outline">Ref: #BK-9491 • +966 50 119 ****</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-title-sm text-on-surface">Twins Newborn Night Care &amp; Nursery Prep</span>
+<span class="font-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span>
+                      Full 30-Day Contract • Nov 10 – Dec 10
+                    </span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-1 font-body-sm">
+<span class="material-symbols-outlined text-outline text-[16px]">location_on</span>
+<span>Hittin District</span>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center text-label-sm font-semibold">
+                      AB
+                    </div>
+<div class="flex flex-col">
+<span class="font-title-sm text-on-surface leading-tight">Amina B. &amp; Elena V.</span>
+<span class="font-label-sm text-outline">Dual Caregiver Team</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<span class="inline-flex items-center gap-1 px-space-sm py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                    Contract Active
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-space-xs">
+<a class="p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary" href="https://wa.me/966501234567" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</a>
+<button class="p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-primary" onclick="openDetailDrawer('Faisal Bin Rashid', '#BK-9491', 'Amina B. &amp; Elena V.', 'Hittin District', 'Twins Newborn Night Care (30 Days)')" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-primary" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination & Footer Controls -->
+<div class="px-space-md py-space-sm bg-surface-container-low flex flex-wrap items-center justify-between gap-space-md">
+<span class="font-body-sm text-on-surface-variant">Showing <strong>4</strong> of <strong>28</strong> active family care dispatches in Riyadh central zone</span>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm disabled:opacity-50" disabled="" type="button">Previous</button>
+<button class="w-7 h-7 rounded bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center font-bold" type="button">1</button>
+<button class="w-7 h-7 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm flex items-center justify-center hover:bg-surface-container" type="button">2</button>
+<button class="w-7 h-7 rounded bg-surface-container-lowest text-on-surface font-label-sm text-label-sm flex items-center justify-center hover:bg-surface-container" type="button">3</button>
+<button class="px-space-sm py-1 rounded bg-surface-container-lowest text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface" type="button">Next</button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: SERVICES CATALOG MANAGEMENT (13 SERVICES DIRECTLY MATCHING BRAND ASSETS) -->
+<section class="hidden flex flex-col gap-space-lg" id="services-cms-section">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Services &amp; Category CMS</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">13 Core Offerings</span>
+</div>
+<p class="font-body-md text-on-surface-variant">Direct operational synchronization with the customer-facing Riyadh portal and WhatsApp auto-responder.</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md transition-colors shadow-sm" onclick="alert('Creating new service node...')" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>+ Add New Service</span>
+</button>
+</div>
+</div>
+<!-- Category Group A: Newborn & Infant Care Services -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</div>
+<div>
+<h2 class="font-title-lg text-title-lg text-primary font-bold">Newborn &amp; Infant Care Services</h2>
+<span class="font-label-sm text-outline">Clinical baby nursing, feeding routines, maternal support</span>
+</div>
+</div>
+<span class="font-label-sm text-primary font-semibold">6 Services Active</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Service Card 1 -->
+<div class="rounded-xl bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="relative h-44 w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A gentle, warm, professional Saudi pediatric nurse in clean medical scrubs smiling affectionately as she cradles a sleeping newborn baby wrapped in a soft white organic cotton blanket inside a luxurious sunlit Riyadh nursery with warm neutral tones and subtle gold lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIe3Wb7WA6cnLlvqzAzmvZpLK5OR_CgZ9A4vmuxve7-HTUcSCMoNuB_2JUk5PYAlIPPxywvROl0-LFq-iA3O1k8FIWrj17U1kq4u_TIK6s5vtx2--wFtsnbCYMBkWtZgV-Tj8R-HSFDTh0MY869WVEO-IO8UL4CtlvfbdZkkrJG_tjNAUSPhnRrWlvd1nsxsy3HBUXTDA6j-Ke4-ySKziFTfMCorLz6qOe6D6LxQKyPbCkinF6wnB9NQ"/>
+<div class="absolute top-3 left-3 px-space-xs py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-xs">
+<span class="w-2 h-2 rounded-full bg-surface-tint"></span> Public Web: Active
+              </div>
+<div class="absolute top-3 right-3 flex items-center gap-1 bg-surface-container-lowest/90 backdrop-blur-md px-space-xs py-0.5 rounded text-label-sm text-outline">
+<span>EN</span><span>•</span><span>AR</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<h3 class="font-title-md text-title-md text-primary font-bold">Newborn Care at Home</h3>
+<span class="px-space-xs py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">Top Booked</span>
+</div>
+<p class="font-body-sm text-on-surface-variant">Professional certified care for your newborn, in the comfort and privacy of your Riyadh home.</p>
+<span class="font-label-sm text-secondary italic">Safe • Gentle • Loving</span>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-surface-dim after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<span class="font-label-sm text-on-surface-variant">Live</span>
+</div>
+<button class="px-space-sm py-1 rounded bg-surface-container-low hover:bg-surface-container text-primary font-label-md text-label-md transition-colors" onclick="editServiceModal('Newborn Care at Home')" type="button">
+                  Edit Details
+                </button>
+</div>
+</div>
+</div>
+<!-- Service Card 2 -->
+<div class="rounded-xl bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="relative h-44 w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A certified lactation specialist and pediatric nurse assisting a young mother holding her infant with gentle bottle feeding and latching in an elegant modern Riyadh home with peaceful pastel decor and natural daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUPDYxTzPiTZ40nDYSky2fmWRiCPQGs1A8mookzZVNXAd7yGR7IfHi9O-5INgdmJxdGYx1k8UnKeqSicnFevYej5pPJ78bLwsEfMp-rullTu3_UahXosdaWEOHg06qn7rFZCYJYORnpvkGd3lI6WJP2hpgFPziW4OXqxhstCLjIaV276nVFFdDVqJrqEPdYIofzFw5UmNtnW4B_qPll8sdoySjohxoI78k05pJ1RSPhgJfeggIm44bKw"/>
+<div class="absolute top-3 left-3 px-space-xs py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-xs">
+<span class="w-2 h-2 rounded-full bg-surface-tint"></span> Public Web: Active
+              </div>
+<div class="absolute top-3 right-3 flex items-center gap-1 bg-surface-container-lowest/90 backdrop-blur-md px-space-xs py-0.5 rounded text-label-sm text-outline">
+<span>EN</span><span>•</span><span>AR</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div class="flex flex-col gap-1">
+<h3 class="font-title-md text-title-md text-primary font-bold">Feeding Support</h3>
+<p class="font-body-sm text-on-surface-variant">Breastfeeding guidance, latch assistance, milk expression plans &amp; sterile bottle preparation.</p>
+<span class="font-label-sm text-secondary italic">Healthy Feeding • Healthy Growth</span>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-surface-dim after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<span class="font-label-sm text-on-surface-variant">Live</span>
+</div>
+<button class="px-space-sm py-1 rounded bg-surface-container-low hover:bg-surface-container text-primary font-label-md text-label-md transition-colors" onclick="editServiceModal('Feeding Support')" type="button">
+                  Edit Details
+                </button>
+</div>
+</div>
+</div>
+<!-- Service Card 3 -->
+<div class="rounded-xl bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="relative h-44 w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close up tender moment of a happy smiling baby having a warm safe bath with water bubbles, supported by caring nurse hands with warm clean towels nearby in a peaceful family bathroom setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsYabBFlyhUd4HrLybR7DxhLZ_0ZGWGPxSZxe19VD5vAm2V9A_7Ua4rIk4Yl4TB31fkdf2rYfygH952tjADmU3T3ojdvsU4k87HbeyVNies4joA1lzntBPl_62WGvJ9VHGOGp2TEP6XPawTF9gKQER1QzCyZyPwGSykUwJzjpKVEugXDgB7cG5zOYSRQIle7Qc57hbG1zSyt44zkuGIteLBFWDRYADrxhnvW0-SngEE6XICK8orWXAAg"/>
+<div class="absolute top-3 left-3 px-space-xs py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-xs">
+<span class="w-2 h-2 rounded-full bg-surface-tint"></span> Public Web: Active
+              </div>
+<div class="absolute top-3 right-3 flex items-center gap-1 bg-surface-container-lowest/90 backdrop-blur-md px-space-xs py-0.5 rounded text-label-sm text-outline">
+<span>EN</span><span>•</span><span>AR</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div class="flex flex-col gap-1">
+<h3 class="font-title-md text-title-md text-primary font-bold">Baby Bathing &amp; Hygiene</h3>
+<p class="font-body-sm text-on-surface-variant">Safe and gentle bathing, umbilical cord care, skin hydration, and soothing post-bath massage.</p>
+<span class="font-label-sm text-secondary italic">Clean • Fresh • Healthy</span>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-surface-dim after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<span class="font-label-sm text-on-surface-variant">Live</span>
+</div>
+<button class="px-space-sm py-1 rounded bg-surface-container-low hover:bg-surface-container text-primary font-label-md text-label-md transition-colors" onclick="editServiceModal('Baby Bathing &amp; Hygiene')" type="button">
+                  Edit Details
+                </button>
+</div>
+</div>
+</div>
+<!-- Service Card 4 -->
+<div class="rounded-xl bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="relative h-44 w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A peaceful sleeping newborn baby lying comfortably on soft cream linens in a dim nursery with subtle warm lighting, exhibiting restful sleep and deep safety." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3Ga_We6jWfHDkHFTHJwZFx-iE1sxrf-EHabzr72Y4by99zLD_BTX0cG5r1D2ri9z5SnMEopQ37oJ7cy4vsdwhwZvwSER5svUUJiWH8JftGRqqU_yXBvFC8qz97GwcjOEhSC_uyVLikk7dBxBW8vu259U2UIsfvCBwbA9dvxIEjUUGWHXPuUN0GMSAxVxYnUjXsS5Ws6J9QNQcgaCkHvYkuOi1iK6HLskTUkLOEl9bExdi7n_P946kaA"/>
+<div class="absolute top-3 left-3 px-space-xs py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-xs">
+<span class="w-2 h-2 rounded-full bg-surface-tint"></span> Public Web: Active
+              </div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div class="flex flex-col gap-1">
+<h3 class="font-title-md text-title-md text-primary font-bold">Sleep &amp; Comfort Rhythms</h3>
+<p class="font-body-sm text-on-surface-variant">Helping your infant sleep better and feel safe; establishing gentle circadian circadian nap routines.</p>
+<span class="font-label-sm text-secondary italic">Restful Sleep • Happier Baby</span>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-surface-dim after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<span class="font-label-sm text-on-surface-variant">Live</span>
+</div>
+<button class="px-space-sm py-1 rounded bg-surface-container-low hover:bg-surface-container text-primary font-label-md text-label-md transition-colors" onclick="editServiceModal('Sleep &amp; Comfort')" type="button">
+                  Edit Details
+                </button>
+</div>
+</div>
+</div>
+<!-- Service Card 5 -->
+<div class="rounded-xl bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="relative h-44 w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A Saudi mother resting comfortably in a peaceful serene master bedroom while a compassionate postpartum nurse supports her with water and checks infant wellness, warm natural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4TEgKebHC0ZrDZAPm-Duh3vt_izJDOwHXuBl887PeJb9PYDPjL5NJEYjSC5Bd100u7STcwx7lwYfHOVnZ6mjSrDICPFTsucH_lCLGlDEbfbewQ8pkKfMMyuNdd8gaoXCdY2-gg4VM8ijvbYuvWVgN5kZPpld1E33jZewFBuGSw6lFBS6uYqExSpW-aKScY69hG3HV7TK0OM4R6_Jte6j3UygwQLowrWnUui0dPQPHBePXqxWFLZaVPg"/>
+<div class="absolute top-3 left-3 px-space-xs py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-xs">
+<span class="w-2 h-2 rounded-full bg-surface-tint"></span> Public Web: Active
+              </div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div class="flex flex-col gap-1">
+<h3 class="font-title-md text-title-md text-primary font-bold">Mother &amp; Baby Support</h3>
+<p class="font-body-sm text-on-surface-variant">Holistic postpartum guidance, maternal emotional wellness checks, and restorative sleep recovery.</p>
+<span class="font-label-sm text-secondary italic">Confident Moms • Healthy Babies</span>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-surface-dim after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<span class="font-label-sm text-on-surface-variant">Live</span>
+</div>
+<button class="px-space-sm py-1 rounded bg-surface-container-low hover:bg-surface-container text-primary font-label-md text-label-md transition-colors" onclick="editServiceModal('Mother &amp; Baby Support')" type="button">
+                  Edit Details
+                </button>
+</div>
+</div>
+</div>
+<!-- Service Card 6 -->
+<div class="rounded-xl bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="relative h-44 w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Two caring hands gently cupping a tiny pink felt heart symbol, representing personalized bespoke infant care plans, soft neutral cream background, high luxury clinical aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsyCfTmUN5NyxSta-PEM3qHNLGmlghvXYZq0r6oQcc8YRFXUJ5ji8h1vnoFQsXQ1a30jmo82LhTJPPdKvdI7GaluKFnV-FhF1P95VcF-dBxIFzQJ3T9CD_5YhpR7Uh_Ero9abK7-Yip1KHgCo5vpXrrUMXOsws6OZ7z_VYYGVxpFEn7PtA8xfgQKl2NcW8mjaXLfiYD-g1FkbDnk7_wLxTAlKOqEgTE0LBQ5WYCTJNORU0Hko6H9OEhg"/>
+<div class="absolute top-3 left-3 px-space-xs py-0.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md text-primary font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-xs">
+<span class="w-2 h-2 rounded-full bg-surface-tint"></span> Public Web: Active
+              </div>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div class="flex flex-col gap-1">
+<h3 class="font-title-md text-title-md text-primary font-bold">Personalized Care Plans</h3>
+<p class="font-body-sm text-on-surface-variant">Every baby is unique, so is our care. Tailored daytime shifts, 24/7 packages, or weekend relief.</p>
+<span class="font-label-sm text-secondary italic">Tailored Care for Your Family</span>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:border-surface-dim after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+<span class="font-label-sm text-on-surface-variant">Live</span>
+</div>
+<button class="px-space-sm py-1 rounded bg-surface-container-low hover:bg-surface-container text-primary font-label-md text-label-md transition-colors" onclick="editServiceModal('Personalized Care Plans')" type="button">
+                  Edit Details
+                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Category Group B: Home & Lifestyle Domestic Care (7 Services) -->
+<div class="flex flex-col gap-space-md mt-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary-fixed text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">home</span>
+</div>
+<div>
+<h2 class="font-title-lg text-title-lg text-primary font-bold">More Home &amp; Lifestyle Services</h2>
+<span class="font-label-sm text-outline">Sanitization, companion care, pet minding, and Riyadh logistics</span>
+</div>
+</div>
+<span class="font-label-sm text-primary font-semibold">7 Services Active</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Item 1: Pet Sitting -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="w-10 h-10 rounded-xl bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">pets</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Dog &amp; Cat Sitting</h3>
+<p class="font-body-sm text-on-surface-variant">Loving domestic care for household pets while parents rest or bond with the newborn.</p>
+<span class="font-label-sm text-secondary font-medium">Happy Pets • Peace of Mind</span>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">Active</span>
+<button class="text-primary font-label-sm text-label-sm hover:underline" onclick="editServiceModal('Dog &amp; Cat Sitting')" type="button">Config</button>
+</div>
+</div>
+<!-- Item 2: Home Cleaning -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">cleaning_services</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Home Cleaning</h3>
+<p class="font-body-sm text-on-surface-variant">Medical-grade sterilization for nursery, linens, air quality and comfortable villa hygiene.</p>
+<span class="font-label-sm text-secondary font-medium">A Cleaner Home</span>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">Active</span>
+<button class="text-primary font-label-sm text-label-sm hover:underline" onclick="editServiceModal('Home Cleaning')" type="button">Config</button>
+</div>
+</div>
+<!-- Item 3: Pick-up & Drop-off -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="w-10 h-10 rounded-xl bg-primary-fixed text-on-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">directions_car</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Pick-up &amp; Drop-off</h3>
+<p class="font-body-sm text-on-surface-variant">Safe and reliable transportation for family errands, hospital pediatric checkups, and school runs.</p>
+<span class="font-label-sm text-secondary font-medium">On Time • Hassle Free</span>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">Active</span>
+<button class="text-primary font-label-sm text-label-sm hover:underline" onclick="editServiceModal('Pick-up &amp; Drop-off')" type="button">Config</button>
+</div>
+</div>
+<!-- Item 4: Babysitting -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="w-10 h-10 rounded-xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">child_care</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Babysitting</h3>
+<p class="font-body-sm text-on-surface-variant">Safe, caring and fun environment for elder toddlers and siblings during mother recovery.</p>
+<span class="font-label-sm text-secondary font-medium">Happy Kids • Happy Parents</span>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">Active</span>
+<button class="text-primary font-label-sm text-label-sm hover:underline" onclick="editServiceModal('Babysitting')" type="button">Config</button>
+</div>
+</div>
+<!-- Item 5: Elderly Care -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="w-10 h-10 rounded-xl bg-tertiary-fixed text-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">elderly</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Elderly Companionship</h3>
+<p class="font-body-sm text-on-surface-variant">Dignified medical companionship, mobility guidance, and medication schedules for grandparents.</p>
+<span class="font-label-sm text-secondary font-medium">Care • Dignity • Comfort</span>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">Active</span>
+<button class="text-primary font-label-sm text-label-sm hover:underline" onclick="editServiceModal('Elderly Companionship')" type="button">Config</button>
+</div>
+</div>
+<!-- Item 6: Errands & Assistance -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="w-10 h-10 rounded-xl bg-surface-tint text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Errands &amp; Personal Assistance</h3>
+<p class="font-body-sm text-on-surface-variant">Running pharmacy trips, baby formula pickups, nursery inventory, and household errands.</p>
+<span class="font-label-sm text-secondary font-medium">Your Needs • Our Priority</span>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">Active</span>
+<button class="text-primary font-label-sm text-label-sm hover:underline" onclick="editServiceModal('Errands &amp; Personal Assistance')" type="button">Config</button>
+</div>
+</div>
+<!-- Item 7: Concierge / And More -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div class="flex flex-col gap-space-xs">
+<div class="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">more_horiz</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">And More... (Concierge)</h3>
+<p class="font-body-sm text-on-surface-variant">Custom requests, private nurse event accompaniment, and VIP Riyadh family accommodations.</p>
+<span class="font-label-sm text-secondary font-medium">Flexible &amp; Reliable</span>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between">
+<span class="px-space-xs py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">Active</span>
+<button class="text-primary font-label-sm text-label-sm hover:underline" onclick="editServiceModal('Custom Request Concierge')" type="button">Config</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: CARE PACKAGES & PRICING TIER MANAGER -->
+<section class="hidden flex flex-col gap-space-lg" id="pricing-packages-section">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">Care Packages &amp; Pricing Tiers</h2>
+<p class="font-body-md text-on-surface-variant">Live package fee schedule published to public Riyadh landing pages and quote generators.</p>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-on-surface-variant" id="save-status">All changes auto-saved to cloud</span>
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md transition-colors shadow-sm" onclick="saveAllPrices()" type="button">
+<span class="material-symbols-outlined text-[16px]">save</span>
+<span>Save Pricing Changes</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<!-- Package Tier 1 -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold uppercase">
+                Starter Tier
+              </span>
+<div class="flex items-center gap-1">
+<span class="font-label-sm text-outline">Public View:</span>
+<span class="w-2 h-2 rounded-full bg-surface-tint"></span>
+</div>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title-lg text-title-lg text-primary font-bold">Essential Newborn Start</h3>
+<p class="font-body-sm text-on-surface-variant mt-1">Ideal for first-time mothers returning from hospital recovery needing routine stabilization.</p>
+</div>
+<!-- Price Input Control -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-1">
+<label class="font-label-sm text-outline uppercase">Block Rate (SAR)</label>
+<div class="flex items-center gap-space-xs">
+<input class="w-32 px-space-sm py-1 rounded bg-surface-container-lowest text-primary font-bold font-title-lg text-title-lg focus:outline-none focus:ring-2 focus:ring-primary" id="pkg-price-1" type="number" value="4200"/>
+<span class="font-title-sm text-on-surface-variant">SAR / 2-Week Block</span>
+</div>
+<span class="font-label-sm text-outline">Includes 4 to 6 hours daily / on-demand shifts</span>
+</div>
+<!-- Inclusions List -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<span class="font-label-sm text-primary uppercase font-bold tracking-wider">Plan Inclusions:</span>
+<ul class="flex flex-col gap-1.5 font-body-sm text-on-surface-variant">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-surface-tint text-[18px] shrink-0">check_circle</span>
+<span>Gentle infant sponge bathing &amp; cord care</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-surface-tint text-[18px] shrink-0">check_circle</span>
+<span>Latch support &amp; bottle sterilization</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-surface-tint text-[18px] shrink-0">check_circle</span>
+<span>Daily digital sleep &amp; feeding log updates</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-surface-tint text-[18px] shrink-0">check_circle</span>
+<span>WhatsApp direct nurse support desk</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between">
+<span class="font-label-sm text-outline">Active Bookings: <strong>8 Families</strong></span>
+<button class="text-primary font-label-sm text-label-sm hover:underline" onclick="previewTierQuote('Essential Newborn Start', 4200)" type="button">Quote Simulator</button>
+</div>
+</div>
+<!-- Package Tier 2: FEATURED / MOST POPULAR -->
+<div class="relative rounded-xl bg-surface-container-lowest p-space-lg shadow-md flex flex-col justify-between">
+<div class="absolute -top-3.5 right-6 px-space-md py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-bold uppercase tracking-wider shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">star</span>
+<span>Most Popular in Riyadh</span>
+</div>
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold uppercase">
+                Neonatal Gold Tier
+              </span>
+<div class="flex items-center gap-1">
+<span class="font-label-sm text-outline">Public View:</span>
+<span class="w-2 h-2 rounded-full bg-surface-tint"></span>
+</div>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title-lg text-title-lg text-primary font-bold">Comprehensive Postpartum Care</h3>
+<p class="font-body-sm text-on-surface-variant mt-1">Complete overnight infant supervision allowing mothers full deep restorative sleep.</p>
+</div>
+<!-- Price Input Control -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-1">
+<label class="font-label-sm text-outline uppercase">Monthly Rate (SAR)</label>
+<div class="flex items-center gap-space-xs">
+<input class="w-32 px-space-sm py-1 rounded bg-surface-container-lowest text-primary font-bold font-title-lg text-title-lg focus:outline-none focus:ring-2 focus:ring-primary" id="pkg-price-2" type="number" value="8800"/>
+<span class="font-title-sm text-on-surface-variant">SAR / Month</span>
+</div>
+<span class="font-label-sm text-secondary font-medium">Full Night 10-12 hours or 24/7 live-in nurse</span>
+</div>
+<!-- Inclusions List -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<span class="font-label-sm text-primary uppercase font-bold tracking-wider">Plan Inclusions:</span>
+<ul class="flex flex-col gap-1.5 font-body-sm text-on-surface-variant">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-surface-tint text-[18px] shrink-0">check_circle</span>
+<span>Full overnight infant supervision (quiet night nursery)</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-surface-tint text-[18px] shrink-0">check_circle</span>
+<span>Mother emotional care &amp; post-delivery vitals</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-surface-tint text-[18px] shrink-0">check_circle</span>
+<span>Infant colic relief, tummy massage &amp; burping</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-surface-tint text-[18px] shrink-0">check_circle</span>
+<span>Licensed BLS / CPR pediatric certified nurse</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between">
+<span class="font-label-sm text-primary font-bold">Active Bookings: <strong>16 Families</strong></span>
+<button class="text-primary font-label-sm text-label-sm hover:underline" onclick="previewTierQuote('Comprehensive Postpartum Care', 8800)" type="button">Quote Simulator</button>
+</div>
+</div>
+<!-- Package Tier 3: Complete Home Harmony -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold uppercase">
+                Villa Concierge Tier
+              </span>
+<div class="flex items-center gap-1">
+<span class="font-label-sm text-outline">Public View:</span>
+<span class="w-2 h-2 rounded-full bg-surface-tint"></span>
+</div>
+</div>
+<div class="flex flex-col">
+<h3 class="font-title-lg text-title-lg text-primary font-bold">Complete Home Harmony</h3>
+<p class="font-body-sm text-on-surface-variant mt-1">Newborn clinical nursing combined with dedicated nursery sanitization and domestic assistance.</p>
+</div>
+<!-- Price Input Control -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-1">
+<label class="font-label-sm text-outline uppercase">Monthly Rate (SAR)</label>
+<div class="flex items-center gap-space-xs">
+<input class="w-32 px-space-sm py-1 rounded bg-surface-container-lowest text-primary font-bold font-title-lg text-title-lg focus:outline-none focus:ring-2 focus:ring-primary" id="pkg-price-3" type="number" value="11500"/>
+<span class="font-title-sm text-on-surface-variant">SAR / Month</span>
+</div>
+<span class="font-label-sm text-outline">Hybrid dual attendant option</span>
+</div>
+<!-- Inclusions List -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<span class="font-label-sm text-primary uppercase font-bold tracking-wider">Plan Inclusions:</span>
+<ul class="flex flex-col gap-1.5 font-body-sm text-on-surface-variant">
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-surface-tint text-[18px] shrink-0">check_circle</span>
+<span>Pediatric nurse + nursery sterilization team</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-surface-tint text-[18px] shrink-0">check_circle</span>
+<span>Toddler sibling play accompaniment</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-surface-tint text-[18px] shrink-0">check_circle</span>
+<span>Pharmacy &amp; grocery errand coordination</span>
+</li>
+<li class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-surface-tint text-[18px] shrink-0">check_circle</span>
+<span>Direct Operations Lead hotline in Riyadh</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md flex items-center justify-between">
+<span class="font-label-sm text-outline">Active Bookings: <strong>4 Families</strong></span>
+<button class="text-primary font-label-sm text-label-sm hover:underline" onclick="previewTierQuote('Complete Home Harmony', 11500)" type="button">Quote Simulator</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Operational Riyadh District Overview Map Card -->
+<div class="w-full rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col lg:flex-row gap-space-lg items-center">
+<div class="w-full lg:w-1/2 flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">explore</span>
+<span class="font-label-sm text-outline uppercase tracking-wider">Riyadh Coverage Radius</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">Real-Time Nurse Logistics in Northern Riyadh</h2>
+<p class="font-body-md text-on-surface-variant">
+          Caregiver dispatch stations are strategically positioned across <strong>Al-Malqa</strong> and <strong>Al-Nakheel</strong>, ensuring average emergency response arrival times under 25 minutes for high-priority infant care calls.
+        </p>
+<div class="grid grid-cols-2 gap-space-sm mt-space-xs">
+<div class="p-space-xs rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-outline">Diplomatic Quarter (DQ)</span>
+<span class="font-title-sm text-primary">8 Active Nurses</span>
+</div>
+<div class="p-space-xs rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-outline">Al-Malqa &amp; Hittin</span>
+<span class="font-title-sm text-primary">15 Active Nurses</span>
+</div>
+<div class="p-space-xs rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-outline">Al-Nakheel &amp; Al-Muhammadiyah</span>
+<span class="font-title-sm text-primary">11 Active Nurses</span>
+</div>
+<div class="p-space-xs rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-outline">Al-Sahafa &amp; Al-Yasmin</span>
+<span class="font-title-sm text-primary">4 Active Nurses</span>
+</div>
+</div>
+</div>
+<div class="w-full lg:w-1/2 h-64 rounded-xl overflow-hidden shadow-inner relative">
+<div class="w-full h-full bg-cover bg-center rounded-xl" data-location="Riyadh, Saudi Arabia" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAOqZCm3h2ZdKtsjzKgA_DVZVqCz-QwjjtZEbYQwA7Avi3Fge1qzatkvzP8pR04aTK1qf8o9aEE7QbV4kj_ycY1c127_AOdG3J_jtP57HzS-tN3i7QgxhKNKlveghmEgUTxLpdkdiY3qcgEv17AG_JBjeBdS6rT9FlhlP7vUeRmD5i-FV6eYVXr1xWPGTmevjwlk6qVG0T-jbt6292F753HPuhKzkBALoJZ4bfNf0GDe23vsi9Br43kZg')"></div>
+<div class="absolute bottom-3 left-3 bg-surface/90 backdrop-blur-md px-space-sm py-1 rounded-lg text-primary font-label-sm text-label-sm shadow-md flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span>
+<span>Central Riyadh Operations Fleet</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Detail Slide-out Drawer (Hidden by default, shown via JS) -->
+<div class="fixed inset-y-0 right-0 z-50 w-full max-w-md bg-surface-container-lowest shadow-2xl transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between" id="booking-drawer">
+<div class="p-space-lg flex flex-col gap-space-md overflow-y-auto">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">vital_signs</span>
+<span class="font-title-lg text-title-lg text-primary font-bold">Booking Care Profile</span>
+</div>
+<button class="p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant" onclick="closeDetailDrawer()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-sm text-outline">Family / Account</span>
+<h3 class="font-title-lg text-title-lg text-primary font-bold" id="drawer-family">Princess Noura / Al-Saud</h3>
+<span class="font-label-sm text-outline" id="drawer-ref">Ref #BK-9482</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-sm text-outline uppercase tracking-wider">Shift Specifications</span>
+<div class="p-space-sm rounded-lg bg-surface-container-low/50 flex flex-col gap-1">
+<span class="text-body-sm text-on-surface-variant">Assigned Care Nurse:</span>
+<span class="font-title-sm text-primary font-semibold" id="drawer-nurse">Sarah Mansour, RN</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low/50 flex flex-col gap-1">
+<span class="text-body-sm text-on-surface-variant">Location &amp; District:</span>
+<span class="font-title-sm text-on-surface font-semibold" id="drawer-location">Diplomatic Quarter, Riyadh</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low/50 flex flex-col gap-1">
+<span class="text-body-sm text-on-surface-variant">Selected Protocol:</span>
+<span class="font-title-sm text-on-surface font-semibold" id="drawer-service">Comprehensive Postpartum (12h Night)</span>
+</div>
+</div>
+<!-- Infant Daily Care Log Mini Preview -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<span class="font-label-sm text-outline uppercase tracking-wider">Last Shift Infant Vitals</span>
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="p-space-xs rounded bg-surface-container-low text-center">
+<span class="font-label-sm text-outline">Feeding Time</span>
+<span class="font-title-sm text-primary block">05:30 AM (90ml)</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container-low text-center">
+<span class="font-label-sm text-outline">Sleep Duration</span>
+<span class="font-title-sm text-primary block">4h 15m Continuous</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container-low text-center">
+<span class="font-label-sm text-outline">Temperature</span>
+<span class="font-title-sm text-surface-tint block">36.8°C (Normal)</span>
+</div>
+<div class="p-space-xs rounded bg-surface-container-low text-center">
+<span class="font-label-sm text-outline">Cord Care Status</span>
+<span class="font-title-sm text-surface-tint block">Clean &amp; Dry</span>
+</div>
+</div>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-low flex items-center justify-between gap-space-sm">
+<a class="flex-1 text-center py-2 rounded-lg bg-primary text-on-primary font-title-sm text-title-sm hover:bg-primary-container transition-colors shadow-sm" href="https://wa.me/966501234567" target="_blank">
+        Open Family WhatsApp
+      </a>
+<button class="px-space-md py-2 rounded-lg bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md hover:bg-surface-container" onclick="closeDetailDrawer()" type="button">
+        Dismiss
+      </button>
+</div>
+</div>
+<!-- Interactive Quick Booking Modal (Vanilla JS Controlled) -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-space-md bg-inverse-surface/50 backdrop-blur-sm" id="quick-booking-modal">
+<div class="w-full max-w-lg rounded-xl bg-surface-container-lowest p-space-lg shadow-2xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-title-lg text-title-lg text-primary font-bold">New Manual Family Booking</h3>
+<button class="p-1 rounded-lg text-outline hover:text-on-surface" onclick="document.getElementById('quick-booking-modal').classList.add('hidden')" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<form class="flex flex-col gap-space-sm" onsubmit="handleNewBooking(event)">
+<div>
+<label class="font-title-sm text-title-sm text-on-surface">Client / Family Name</label>
+<input class="w-full mt-1 px-space-md py-2 rounded-lg bg-surface-container-low text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary" placeholder="e.g. Al-Otaibi Family" required="" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="font-title-sm text-title-sm text-on-surface">WhatsApp Phone (+966)</label>
+<input class="w-full mt-1 px-space-md py-2 rounded-lg bg-surface-container-low text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary" placeholder="50 123 4567" required="" type="tel"/>
+</div>
+<div>
+<label class="font-title-sm text-title-sm text-on-surface">Riyadh District</label>
+<select class="w-full mt-1 px-space-md py-2 rounded-lg bg-surface-container-low text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary">
+<option>Diplomatic Quarter (DQ)</option>
+<option>Al-Nakheel</option>
+<option>Al-Malqa</option>
+<option>Hittin</option>
+<option>Al-Sahafa</option>
+</select>
+</div>
+</div>
+<div>
+<label class="font-title-sm text-title-sm text-on-surface">Service Package</label>
+<select class="w-full mt-1 px-space-md py-2 rounded-lg bg-surface-container-low text-body-sm text-on-surface focus:outline-none focus:ring-2 focus:ring-primary">
+<option>Comprehensive Postpartum Care (Night Shift)</option>
+<option>Essential Newborn Start (Day Shift)</option>
+<option>Complete Home Harmony (Care + Domestic)</option>
+<option>Urgent Feeding &amp; Lactation Support</option>
+</select>
+</div>
+<div class="flex items-center justify-end gap-space-xs pt-space-sm">
+<button class="px-space-md py-2 rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md hover:bg-surface-container" onclick="document.getElementById('quick-booking-modal').classList.add('hidden')" type="button">
+            Cancel
+          </button>
+<button class="px-space-md py-2 rounded-lg bg-primary text-on-primary font-title-sm text-title-sm hover:bg-primary-container shadow-sm" type="submit">
+            Save &amp; Notify Dispatch
+          </button>
+</div>
+</form>
+</div>
+</div>
+<!-- Inline Vanilla Script for Micro-Interactions -->
+<script>
+    function switchAdminTab(sectionId, clickedBtn) {
+      // Hide all sections
+      document.getElementById('bookings-section').classList.add('hidden');
+      document.getElementById('services-cms-section').classList.add('hidden');
+      document.getElementById('pricing-packages-section').classList.add('hidden');
+
+      // Show requested section
+      const target = document.getElementById(sectionId);
+      if (target) {
+        target.classList.remove('hidden');
+      }
+
+      // Update tab styles
+      document.querySelectorAll('.admin-tab-btn').forEach(btn => {
+        btn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+        btn.classList.add('text-on-surface-variant');
+      });
+      clickedBtn.classList.remove('text-on-surface-variant');
+      clickedBtn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+    }
+
+    function openDetailDrawer(family, ref, nurse, loc, service) {
+      document.getElementById('drawer-family').innerText = family;
+      document.getElementById('drawer-ref').innerText = 'Ref ' + ref;
+      document.getElementById('drawer-nurse').innerText = nurse;
+      document.getElementById('drawer-location').innerText = loc;
+      document.getElementById('drawer-service').innerText = service;
+
+      const drawer = document.getElementById('booking-drawer');
+      drawer.classList.remove('translate-x-full');
+    }
+
+    function closeDetailDrawer() {
+      const drawer = document.getElementById('booking-drawer');
+      drawer.classList.add('translate-x-full');
+    }
+
+    function quickAssignNurse(ref) {
+      const nurse = prompt('Assign Registered Neonatal Nurse to ' + ref + ':', 'Nurse Fatima Al-Zahrani, RN');
+      if (nurse) {
+        alert('Care Nurse ' + nurse + ' assigned to booking ' + ref + '. Dispatch SMS dispatched to caregiver.');
+      }
+    }
+
+    function editServiceModal(serviceName) {
+      alert('CMS Editor initialized for: ' + serviceName + ' (Syncing EN / AR translation & pricing tables).');
+    }
+
+    function triggerWebSync() {
+      const icon = document.getElementById('sync-icon');
+      const text = document.getElementById('sync-text');
+      icon.classList.add('animate-spin');
+      text.innerText = 'Publishing to Web...';
+
+      setTimeout(() => {
+        icon.classList.remove('animate-spin');
+        text.innerText = 'Synced Successfully!';
+        setTimeout(() => {
+          text.innerText = 'Sync to Public Web';
+        }, 2000);
+      }, 1200);
+    }
+
+    function saveAllPrices() {
+      const p1 = document.getElementById('pkg-price-1').value;
+      const p2 = document.getElementById('pkg-price-2').value;
+      const p3 = document.getElementById('pkg-price-3').value;
+      const status = document.getElementById('save-status');
+
+      status.innerText = 'Updating Riyadh servers...';
+      setTimeout(() => {
+        status.innerHTML = '<span class="text-primary font-semibold">✓ Saved at ' + new Date().toLocaleTimeString() + '</span>';
+      }, 600);
+    }
+
+    function previewTierQuote(title, rate) {
+      alert('Quote Simulator for ' + title + ':\nEstimated VAT (15%): ' + (rate * 0.15) + ' SAR\nTotal Riyadh Billing: ' + (rate * 1.15) + ' SAR.');
+    }
+
+    function sendBroadcastSms() {
+      alert('Broadcast dispatch window opened for 28 families currently in active shifts.');
+    }
+
+    function handleNewBooking(e) {
+      e.preventDefault();
+      alert('Booking created successfully! Automatic WhatsApp confirmation sent to Riyadh dispatcher.');
+      document.getElementById('quick-booking-modal').classList.add('hidden');
+    }
+
+    // Filter table rows on search input
+    document.getElementById('booking-search').addEventListener('input', function(e) {
+      const val = e.target.value.toLowerCase();
+      const rows = document.querySelectorAll('#bookings-section tbody tr');
+      rows.forEach(r => {
+        const text = r.innerText.toLowerCase();
+        r.style.display = text.includes(val) ? '' : 'none';
+      });
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-low mt-space-xl py-space-lg"><div class="w-full px-margin flex flex-col md:flex-row items-center justify-between gap-gutter"><div class="flex items-center gap-space-md text-on-surface-variant font-body-sm text-body-sm"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-primary">verified_user</span><span>MOH Certified Care Protocols • 256-bit TLS Encrypted Session</span></div><span class="hidden lg:inline text-outline-variant">•</span><span class="hidden lg:inline">Riyadh Hub Cluster: KSA-CENTRAL-01</span></div><div class="flex items-center gap-space-md font-body-sm text-body-sm text-on-surface-variant"><span>Live Time: AST (UTC+3) Riyadh</span><span>© 2025 AMAN Maternity &amp; Pediatric Care. All rights reserved.</span></div></div></footer></body></html>

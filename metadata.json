@@ -1,0 +1,6 @@
+{
+  "name": "AMAN Baby Care & Home Services",
+  "description": "Professional newborn care, postpartum assistance, babysitting, and dedicated home services in Riyadh, Saudi Arabia. Gentle care, peace of mind.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
